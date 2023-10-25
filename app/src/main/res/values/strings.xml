@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Gafito</string>
+    <string name="title_activity_data_parkir">DataParkir</string>
+    <string name="title_activity_lapor_kehilangan">LaporKehilanganActivity</string>
+    <string name="nopol1">KP</string>
+    <string name="nopol2">Nomor Polisi</string>
+    <string name="nopol3">KD</string>
+    <string name="merek_kendaraan">Merek Kendaraan</string>
+    <string name="warna_kendaraan">Warna Kendaraan</string>
+    <string name="tanggal_report">Waktu Kehilanggan</string>
+
 </resources>
