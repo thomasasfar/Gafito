@@ -13,5 +13,17 @@
     <string name="title_activity_profil">ProfilActivity</string>
     <string name="title_activity_info">InfoActivity</string>
     <string name="title_activity_detail_info">DetailInfoActivity</string>
-
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="or">or</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="sign_up_here">Sign up here</string>
+    <string name="fullname">Full Name</string>
+    <string name="conf_pass">Confirm Password</string>
+    <string name="nim">NIM</string>
+    <string name="login_here">Login here</string>
 </resources>

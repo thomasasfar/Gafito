@@ -56,6 +56,18 @@ class MainActivity : ComponentActivity() {
                 }) {
                     Text(text = "Info Kehilangan")
                 }
+                Button(onClick = {
+                    val navigate = Intent(this@MainActivity, LoginActivity::class.java)
+                    startActivity(navigate)
+                }) {
+                    Text(text = "Login")
+                }
+                Button(onClick = {
+                    val navigate = Intent(this@MainActivity, RegisterActivity::class.java)
+                    startActivity(navigate)
+                }) {
+                    Text(text = "Register")
+                }
             }
         }
     }
