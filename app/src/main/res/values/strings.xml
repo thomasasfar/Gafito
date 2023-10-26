@@ -8,5 +8,10 @@
     <string name="merek_kendaraan">Merek Kendaraan</string>
     <string name="warna_kendaraan">Warna Kendaraan</string>
     <string name="tanggal_report">Waktu Kehilanggan</string>
+    <string name="title_activity_loading">LoadingActivity</string>
+    <string name="title_activity_show_qractivity">ShowQRActivity</string>
+    <string name="title_activity_profil">ProfilActivity</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="title_activity_detail_info">DetailInfoActivity</string>
 
 </resources>

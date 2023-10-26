@@ -13,6 +13,31 @@
         android:theme="@style/Theme.Gafito"
         tools:targetApi="31">
         <activity
+            android:name=".DetailInfoActivity"
+            android:exported="false"
+            android:label="@string/title_activity_detail_info"
+            android:theme="@style/Theme.Gafito" />
+        <activity
+            android:name=".InfoActivity"
+            android:exported="false"
+            android:label="@string/title_activity_info"
+            android:theme="@style/Theme.Gafito" />
+        <activity
+            android:name=".ProfilActivity"
+            android:exported="false"
+            android:label="@string/title_activity_profil"
+            android:theme="@style/Theme.Gafito" />
+        <activity
+            android:name=".ShowQRActivity"
+            android:exported="false"
+            android:label="@string/title_activity_show_qractivity"
+            android:theme="@style/Theme.Gafito" />
+        <activity
+            android:name=".LoadingActivity"
+            android:exported="false"
+            android:label="@string/title_activity_loading"
+            android:theme="@style/Theme.Gafito" />
+        <activity
             android:name=".LaporKehilanganActivity"
             android:exported="false"
             android:label="@string/title_activity_lapor_kehilangan"

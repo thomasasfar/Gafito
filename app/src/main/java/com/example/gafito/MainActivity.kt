@@ -38,8 +38,25 @@ class MainActivity : ComponentActivity() {
                 }) {
                     Text(text = "Report")
                 }
+                Button(onClick = {
+                    val navigate = Intent(this@MainActivity, ShowQRActivity::class.java)
+                    startActivity(navigate)
+                }) {
+                    Text(text = "Show QR")
+                }
+                Button(onClick = {
+                    val navigate = Intent(this@MainActivity, ProfilActivity::class.java)
+                    startActivity(navigate)
+                }) {
+                    Text(text = "Profil")
+                }
+                Button(onClick = {
+                    val navigate = Intent(this@MainActivity, InfoActivity::class.java)
+                    startActivity(navigate)
+                }) {
+                    Text(text = "Info Kehilangan")
+                }
             }
-
         }
     }
 }
@@ -56,6 +73,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     GafitoTheme {
-        Greeting("Gafito")
+        Greeting("Android")
     }
 }
