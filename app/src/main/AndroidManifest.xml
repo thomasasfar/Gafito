@@ -48,17 +48,17 @@
             android:label="@string/title_activity_login"
             android:theme="@style/Theme.Gafito" />
         <activity
+            android:name=".ListLaporanActivity"
+            android:exported="false"
+            android:label="@string/title_activity_list_laporan"
+            android:theme="@style/Theme.Gafito" />
+        <activity
             android:name=".LaporKehilanganActivity"
             android:exported="false"
             android:label="@string/title_activity_lapor_kehilangan"
             android:theme="@style/Theme.Gafito" />
         <activity
             android:name=".DataParkirActivity"
-            android:exported="false"
-            android:label="@string/title_activity_data_parkir"
-            android:theme="@style/Theme.Gafito" />
-        <activity
-            android:name=".DataParkir"
             android:exported="false"
             android:label="@string/title_activity_data_parkir"
             android:theme="@style/Theme.Gafito" />

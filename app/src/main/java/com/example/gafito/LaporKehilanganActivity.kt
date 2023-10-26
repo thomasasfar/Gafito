@@ -47,7 +47,7 @@ class LaporKehilanganActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    ReportView()
+                    ReportAddView()
                 }
             }
         }
@@ -55,7 +55,7 @@ class LaporKehilanganActivity : ComponentActivity() {
 }
 
 @Composable
-fun ReportView() {
+fun ReportAddView() {
     var KPInput by remember { mutableStateOf("") }
     var nopolInput by remember { mutableStateOf("") }
     var KDInput by remember { mutableStateOf("") }
@@ -193,6 +193,6 @@ fun FormNomPol(
 @Composable
 fun GreetingPreview2() {
     GafitoTheme {
-        ReportView()
+        ReportAddView()
     }
 }

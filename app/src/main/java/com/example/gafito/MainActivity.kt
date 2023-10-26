@@ -27,7 +27,7 @@ class MainActivity : ComponentActivity() {
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Button(onClick = {
-                    val navigate = Intent(this@MainActivity, DataParkirActivity::class.java)
+                    val navigate = Intent(this@MainActivity, ListLaporanActivity::class.java)
                     startActivity(navigate)
                 }) {
                     Text(text = "Data Parkir")

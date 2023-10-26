@@ -26,4 +26,6 @@
     <string name="conf_pass">Confirm Password</string>
     <string name="nim">NIM</string>
     <string name="login_here">Login here</string>
+    <string name="title_activity_list_laporan">Apa gitu</string>
+
 </resources>

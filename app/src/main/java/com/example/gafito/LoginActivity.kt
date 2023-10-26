@@ -2,6 +2,7 @@
 
 package com.example.gafito
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -30,6 +31,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.AnnotatedString
@@ -60,6 +62,7 @@ class LoginActivity : ComponentActivity() {
 
 @Composable
 fun Login() {
+    val loginContext = LocalContext.current
     var username by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
     Column(
@@ -125,7 +128,10 @@ fun Login() {
             modifier = Modifier
                 .align(Alignment.CenterHorizontally)
                 .padding(20.dp),
-            onClick = { },
+            onClick = {
+                val pindah = Intent(loginContext,RegisterActivity::class.java)
+                loginContext.startActivity(pindah)
+            },
             style = TextStyle(
                 fontSize = 14.sp,
                 fontFamily = FontFamily.Default,

@@ -2,6 +2,7 @@
 
 package com.example.gafito
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -30,6 +31,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.AnnotatedString
@@ -63,6 +65,7 @@ class RegisterActivity : ComponentActivity() {
 
 @Composable
 fun Register() {
+    val regisContext = LocalContext.current
     var username by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
     var fullname by remember { mutableStateOf("")}
@@ -82,7 +85,7 @@ fun Register() {
                 .size(width = 160.dp, height = 160.dp)
         )
         Text(
-            text = stringResource(R.string.login),
+            text = stringResource(R.string.register),
             modifier = Modifier,
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold
@@ -151,7 +154,7 @@ fun Register() {
         }
         ButtonLogin(
             onClick = { /*TODO*/ },
-            text = "Login"
+            text = stringResource(id = R.string.register)
         )
         Text(
             text = stringResource(R.string.or),
@@ -161,7 +164,10 @@ fun Register() {
             text = AnnotatedString(stringResource(R.string.login_here)),
             modifier = Modifier
                 .align(Alignment.CenterHorizontally),
-            onClick = { },
+            onClick = {
+                val pindah = Intent(regisContext,LoginActivity::class.java)
+                regisContext.startActivity(pindah)
+            },
             style = TextStyle(
                 fontSize = 14.sp,
                 fontFamily = FontFamily.Default,
